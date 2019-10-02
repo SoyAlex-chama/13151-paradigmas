@@ -11,11 +11,3 @@
 ; * Angle
 
 
-(define (tdaScenario x y n)
-  (+ x y))
-
-(define (tdaPlayer posX posY life turn)
-  (- posX posY))
-
-(define (tdaShoot angle pressure)
-  (* angle pressure))
