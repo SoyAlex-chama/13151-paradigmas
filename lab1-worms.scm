@@ -1,3 +1,4 @@
+
 ; TDA
 ; A player has:
 ; * Position in X
@@ -12,10 +13,10 @@
 
 
 (define (tdaScenario x y n)
-  (+ x y))
+  (cons 1 (cons 2 (cons 3 (cons 4 null)))))
 
 (define (tdaPlayer posX posY life turn)
-  (- posX posY))
+  (cons 1 (cons 2 (cons 3 (cons 4 null)))))
 
 (define (tdaShoot angle pressure)
-  (* angle pressure))
+  (cons angle pressure))
