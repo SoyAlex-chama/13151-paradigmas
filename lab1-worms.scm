@@ -1,4 +1,3 @@
-
 ; TDA
 ; A player has:
 ; * Position in X
@@ -11,12 +10,21 @@
 ; A shoot has:
 ; * Angle
 
+(define (retdaScenario)
+  (display "N debe ser menor a X e Y.")
+  (newline)
+  (display "X, enter, Y, enter, N:")
+  (newline)
+  (tdaScenario (read) (read) (read))
+)
 
-(define (tdaScenario x y n)
-  (cons 1 (cons 2 (cons 3 (cons 4 null)))))
+(define (tdaScenario sizeX sizeY numEnemies)
+  (if (and (< numEnemies sizeX) (< numEnemies sizeY))
+  (cons (cons sizeX sizeY) (cons numEnemies '())) (retdaScenario) )
+)
 
 (define (tdaPlayer posX posY life turn)
-  (cons 1 (cons 2 (cons 3 (cons 4 null)))))
+  (cons (cons x y) (cons life (cons 4 '()))))
 
 (define (tdaShoot angle pressure)
   (cons angle pressure))
