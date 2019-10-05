@@ -1,0 +1,4 @@
+(require "lab1-scheme.scm")
+(require "randomScheme.rkt")
+
+(myRandom)

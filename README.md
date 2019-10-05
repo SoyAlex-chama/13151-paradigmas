@@ -10,7 +10,7 @@
 <a name="headers"/>
 ## Headers
 
-lab1-scheme es la recreación de un antiguo videojuego de Worms.
+lab1-worms es la recreación de un antiguo videojuego de Worms.
   - Consiste en posicionar jugadores en un mapa
   - Disparar y vencer a los demás
 
@@ -26,16 +26,20 @@ El disparo considera el ángulo y la fuerza con que se trazará el proyecto.
 
 ### Tecnología
 
-lab1-scheme usa los siguientes proyectos para trabajar correctamente:
+lab1-worms usa los siguientes proyectos para trabajar correctamente:
 
 * [markdown-it] - Markdown para llevar a caso la documentación;
 * [drRacket] - Para la ejecución del programa
 
 ### Instalación
 
-lab-1-scheme requiere [drRacket] R5RS para correr.
+lab-1-worms requiere [drRacket] R5RS para correr.
 
 Instala las dependencias y comienza con el juego.
+```sh
+$ cd /TomaAsistenciaCIChile/backoffice/
+$ npm install -d
+```
 
 Para ambientes en Windows, descargar en su página web.
 

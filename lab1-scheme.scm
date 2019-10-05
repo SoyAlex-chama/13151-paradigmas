@@ -1,3 +1,14 @@
+(provide selectorPosX)
+(provide selectorPosY)
+(provide tdaScene)
+(provide selectorScene)
+(provide tdaPlayer)
+(provide selectorPlayer)
+(provide tdaShoot)
+#|
+Note: I don't know if this type of file
+make me problems for the provide function
+|#
 
 #|Selectors for positions
 
@@ -9,7 +20,7 @@ there are selectors with the correspondant validation.
 ;(selectorPosX (tdaScene 10 20 3)) => 10
 (define (selectorPosX tda) (car (car tda)))
 
-;(selectorPosX (tdaScene 10 20 3)) => 20
+;(selectorPosY (tdaScene 10 20 3)) => 20
 (define (selectorPosY tda) (cdr (car tda)))
 
 ; (selector (tdaScene 10 20 3) 1) => 3
@@ -49,14 +60,14 @@ can move the character.
       (retdaScene)
       )
   )
-; 
+;(selectorScene (tdaScene 20 30 4) 2) => (Error message)
 (define (reSelectorScene tda pos)
-  (diplay "The position must be less than 2.")
+  (display "The position must be less than 2.")
   (newline)
   (display "Position, enter:")
   (selectorScene tda (read))
   )
-
+;(selectorScene (tdaScene 20 30 4) 1) => 4 
 (define (selectorScene tda Pos)
   (if (< Pos 2)
       (selector tda Pos)
@@ -93,7 +104,7 @@ can move the character.
 )
 
 (define (reSelectorPlayer tda pos)
-  (diplay "The position must be less than 2.")
+  (display "The position must be less than 2.")
   (newline)
   (display "Position, enter:")
   (selectorScene tda (read))
@@ -106,18 +117,16 @@ can move the character.
       )
   )
 
-; A shoot has:
-; * Angle
-; * Pressure?
+#| TDA of the shoot
+
+A shoot has:
+* Angle
+* Pressure
+
+
+|#
 
 (define (tdaShoot angle pressure)
   (cons angle pressure))
-
-;
-; For create the scene, we need
-
-
-(define (createScene N M E D seed)
-  (cons (tdaScene N M E) (cons D (cons seed))))
 
 
