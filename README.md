@@ -9,9 +9,10 @@
 [TDA Scene](#tdascene)  
 [TDA Shoot](#tdashoot)  
 [Tecnología](#technology)  
-[Instalación](#instalation)  
+[Instalación](#instalation) 
 
 <a name="headers"/>
+
 ## Sobre el programa
 
 lab1-worms es la recreación de un antiguo videojuego de Worms.
@@ -19,18 +20,22 @@ lab1-worms es la recreación de un antiguo videojuego de Worms.
   - Disparar y vencer a los demás
 
 <a name="tdaplayer"/>
+
 ### TDA Player
 Es el TDA del jugador, permite almacenar sus posiciones dentro de un mapa y se considera su vida y turno para la continuidad del juego.
 
 <a name="tdascene"/>
+
 ### TDA Scene
 El mapa donde se posicionan los jugadores, los enemigos no pueden ser mas de lo que espacio posee.
 
 <a name="tdashoot"/>
+
 ### TDA Shoot
 El disparo considera el ángulo y la fuerza con que se trazará el proyecto.
 
 <a name="tech"/>
+
 ## Tecnología
 
 lab1-worms usa los siguientes proyectos para trabajar correctamente:
@@ -39,6 +44,7 @@ lab1-worms usa los siguientes proyectos para trabajar correctamente:
 * [drRacket] - Para la ejecución del programa
 
 <a name="instalation"/>
+
 ### Instalación
 
 lab-1-worms requiere [drRacket] R5RS para correr.
