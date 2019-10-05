@@ -29,6 +29,8 @@ In this case, we are gonna leave 1 row and 1 column for
 can move the character.
 |#
 
+;Examples
+;(tdaScene -10 20 3) => (Error message)
 (define (retdaScene)
   (display "The size must be positive numbers.\nN must be smaller than X and Y.")
   (newline)
@@ -36,7 +38,7 @@ can move the character.
   (newline)
   (tdaScene (read) (read) (read))
   )
-
+;(tdaScene 10 20 3) => ((10 . 20) 3)
 (define (tdaScene sizeX sizeY numEnemies)
   (if (and (positive? sizeY)
            (and (positive? sizeX)
@@ -47,7 +49,7 @@ can move the character.
       (retdaScene)
       )
   )
-
+; 
 (define (reSelectorScene tda pos)
   (diplay "The position must be less than 2.")
   (newline)
@@ -57,7 +59,7 @@ can move the character.
 
 (define (selectorScene tda Pos)
   (if (< Pos 2)
-      (if (< Pos 1) (car tda) (selector (cdr tda) (- Pos 1)))
+      (selector tda Pos)
       (reSelectorScene tda pos)
       )
   )
@@ -69,7 +71,6 @@ can move the character.
  * Life: Positive numbers
  * The turn in 1 or 0
  * The ultimate sense for their next turn: Between 0 and 360
-
 
 |#
 
