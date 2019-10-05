@@ -65,6 +65,7 @@ can move the character.
   )
 
 #|TDA of Player
+
  A player has:
  * Position in X: Not can be more than the tdaScene.X
  * Position in y: Not can be more than the tdaScene.Y
