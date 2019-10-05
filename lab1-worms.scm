@@ -34,3 +34,11 @@
 (define (tdaShoot angle pressure)
   (cons angle pressure))
 
+;
+; For create the scene, we need
+
+
+(define (createScene N M E D seed)
+  (cons (tdaScenario N M E) (cons D (cons seed)))) 
+)
+
