@@ -7,7 +7,9 @@
 (provide tdaShoot)
 #|
 Note: I don't know if this type of file
-make me problems for the provide function
+make me problems for the provide function.
+If it is, please delete all the provides
+The functions below works and are validated.
 |#
 
 #|Selectors for positions
