@@ -1,10 +1,3 @@
-(provide selectorPosX)
-(provide selectorPosY)
-(provide tdaScene)
-(provide selectorScene)
-(provide tdaPlayer)
-(provide selectorPlayer)
-(provide tdaShoot)
 #|
 Note: I don't know if this type of file
 make me problems for the provide function.
@@ -125,10 +118,39 @@ A shoot has:
 * Angle
 * Pressure
 
-
 |#
 
 (define (tdaShoot angle pressure)
   (cons angle pressure))
 
+#| Create Scene
 
+With the size of map and ubications of the players.
+
+|#
+
+(define (getRandom X Y i)
+  (if (or (> (random i) X)(> (random i) Y))
+      (random i)
+      (getRandom X Y (+ i 1)))
+  )
+
+(define (randomPositions X Y Q Array)
+ (randomPositions X Y (- Q 1) (cons Array (getRandom X Y 0)) )
+  )
+
+(define (createScene N M Q)
+ (cons (tdaScene N M Q) (randomPositions N M Q Null))
+   )
+
+#| checkScene
+
+Only reads
+
+|#
+
+(define (checkScene N M Q Array)
+  ()
+  )
+
+; Tengo problemas para llegar al array. Porque además, necesito 
